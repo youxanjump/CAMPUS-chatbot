@@ -8,9 +8,9 @@ var linebot = require('linebot');
 
 // 用於辨識Line Channel的資訊
 var bot = linebot({
-  channelId: '1654797428',
-  channelSecret: '59fadb2dcb6c66e338ad7273806d5a10',
-  channelAccessToken: 'dIiLIe5t6UO+BZo5VzGX951whXwdEMtXASzl6x8dP0spZG4Q8M1mbPMq/jqfdGz13X7p3bVzYbWBnTYhJenl8gSAC63W3QB9H0YdnGmb6aqZkgn5G5F34BTZHsixn6bWi5YXG1S52oQ4x1raGU2XrAdB04t89/1O/w1cDnyilFU='
+  channelId: '',
+  channelSecret: '',
+  channelAccessToken: ''
 });
 
 // 當有人傳送訊息給Bot時
@@ -27,14 +27,14 @@ bot.on('message', function (event) {
       // Values to modify.
 
       // YOUR-APP-ID: The App ID GUID found on the www.luis.ai Application Settings page.
-      const LUIS_appId = "9969903b-836b-47b6-8407-edf3b54e9c71";
+      const LUIS_appId = "";
 
       // YOUR-PREDICTION-KEY: Your LUIS authoring key, 32 character value.
-      const LUIS_predictionKey = "e1a4a2cc5f1b40fbbb86eccedcca1c6f";
+      const LUIS_predictionKey = "";
 
       // YOUR-PREDICTION-ENDPOINT: Replace this with your authoring key endpoint.
       // For example, "https://westus.api.cognitive.microsoft.com/"
-      const LUIS_endpoint = "https://japaneast.api.cognitive.microsoft.com/";
+      const LUIS_endpoint = "";
 
       // The utterance you want to use.
       const utterance = event.message.text;
